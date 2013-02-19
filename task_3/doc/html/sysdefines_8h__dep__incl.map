@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$scwrapper_8h.html" title="This file contains C wrapper functions for system calls." alt="" coords="255,83,415,112"/>
+<area shape="rect" id="node11" href="$kernel_8h.html" title="This file holds kernel wide macros and declarations." alt="" coords="587,83,715,112"/>
+<area shape="rect" id="node5" href="$program__0_2main_8c.html" title="src/program_0/main.c" alt="" coords="5,160,152,189"/>
+<area shape="rect" id="node7" href="$program__1_2main_8c.html" title="src/program_1/main.c" alt="" coords="176,160,323,189"/>
+<area shape="rect" id="node9" href="$program__2_2main_8c.html" title="src/program_2/main.c" alt="" coords="347,160,493,189"/>
+<area shape="rect" id="node13" href="$kernel_8c.html" title="This is the main source code for the kernel." alt="" coords="467,237,595,267"/>
+<area shape="rect" id="node15" href="$threadqueue_8h.html" title="This file defines operations on thread queues." alt="" coords="568,160,733,189"/>
+<area shape="rect" id="node20" href="$scheduler_8c.html" title="This file holds the scheduler code." alt="" coords="757,160,907,189"/>
+<area shape="rect" id="node22" href="$syscall_8c.html" title="This files holds the implementations of all system calls." alt="" coords="931,160,1064,189"/>
+<area shape="rect" id="node18" href="$threadqueue_8c.html" title="This file implements operations on thread queues." alt="" coords="619,237,784,267"/>
+</map>

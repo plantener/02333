@@ -1,0 +1,181 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_OK	src/include/sysdefines.h	10;"	d
+CFLAGS	Makefile	/^CFLAGS = -pedantic -msoft-float -fno-exceptions -fno-common -Isrc\/include -g -ggdb$/;"	m
+EI_ABIVERSION	src/kernel/kernel.h	101;"	d
+EI_CLASS	src/kernel/kernel.h	95;"	d
+EI_DATA	src/kernel/kernel.h	96;"	d
+EI_MAG0	src/kernel/kernel.h	90;"	d
+EI_MAG1	src/kernel/kernel.h	92;"	d
+EI_MAG2	src/kernel/kernel.h	93;"	d
+EI_MAG3	src/kernel/kernel.h	94;"	d
+EI_NIDENT	src/kernel/kernel.h	104;"	d
+EI_OSABI	src/kernel/kernel.h	100;"	d
+EI_PAD	src/kernel/kernel.h	102;"	d
+EI_VERSION	src/kernel/kernel.h	98;"	d
+ELF_images_end	src/kernel/kernel.c	/^const char* ELF_images_end;$/;"	v
+ELF_images_start	src/kernel/kernel.c	/^const struct executable_image* ELF_images_start;$/;"	v	typeref:struct:executable_image
+ERROR	src/include/sysdefines.h	12;"	d
+ERROR_ILLEGAL_SYSCALL	src/include/sysdefines.h	14;"	d
+Elf64_Ehdr	src/kernel/kernel.h	/^struct Elf64_Ehdr$/;"	s
+Elf64_Phdr	src/kernel/kernel.h	/^struct Elf64_Phdr$/;"	s
+KERNEL	Makefile	/^KERNEL := "${PWD}\/objects\/kernel\/kernel.stripped"$/;"	m
+KERNEL_VERSION	src/kernel/kernel.h	20;"	d
+MAX_NUMBER_OF_PROCESSES	src/kernel/kernel.h	23;"	d
+MAX_NUMBER_OF_THREADS	src/kernel/kernel.h	25;"	d
+OPTIMIZATIONFLAGS	Makefile	/^OPTIMIZATIONFLAGS ?= -O3$/;"	m
+PF_MASKPERM	src/kernel/kernel.h	166;"	d
+PF_R	src/kernel/kernel.h	165;"	d
+PF_W	src/kernel/kernel.h	164;"	d
+PF_X	src/kernel/kernel.h	163;"	d
+PT_LOAD	src/kernel/kernel.h	159;"	d
+PT_NULL	src/kernel/kernel.h	158;"	d
+PT_PHDR	src/kernel/kernel.h	160;"	d
+SYSCALL_ARGUMENTS	src/kernel/kernel.h	15;"	d
+SYSCALL_CREATEPROCESS	src/include/sysdefines.h	37;"	d
+SYSCALL_DEBUGGER	src/include/sysdefines.h	26;"	d
+SYSCALL_PRINTHEX	src/include/sysdefines.h	23;"	d
+SYSCALL_PRINTS	src/include/sysdefines.h	20;"	d
+SYSCALL_TERMINATE	src/include/sysdefines.h	31;"	d
+SYSCALL_VERSION	src/include/sysdefines.h	18;"	d
+TSS_descriptor	src/kernel/boot32.s	/^TSS_descriptor:$/;"	l
+_KERNEL_H_	src/kernel/kernel.h	7;"	d
+_SCWRAPPER_H_	src/include/scwrapper.h	8;"	d
+_SYSDEFINES_H_	src/include/sysdefines.h	7;"	d
+_start	src/kernel/boot32.s	/^_start:$/;"	l
+_start	src/kernel/boot64.s	/^_start:$/;"	l
+_start	src/program_startup_code/startup.s	/^_start:$/;"	l
+after_multiboot_header	src/kernel/boot32.s	/^after_multiboot_header:$/;"	l
+allocate_thread	src/kernel/kernel.c	/^allocate_thread(void)$/;"	f
+argv	src/program_startup_code/startup.s	/^argv:$/;"	l
+ax-page-size	Makefile	/^	x86_64-unknown-elf-ld  --no-warn-mismatch -z max-page-size=4096 -Tsrc\/kernel\/link32.ld -o objects\/kernel\/kernel objects\/kernel\/boot32.o objects\/kernel\/relocate.o objects\/kernel\/kernel64.o$/;"	m
+ax-page-size	Makefile	/^	x86_64-unknown-elf-ld  -z max-page-size=4096 -Tsrc\/kernel\/link64.ld -o objects\/kernel\/kernel64 objects\/kernel\/boot64.o objects\/kernel\/enter.o objects\/kernel\/kernel.o objects\/kernel\/syscall.o objects\/program_0\/executable.o objects\/program_1\/executable.o objects\/program_2\/executable.o$/;"	m
+ax-page-size	Makefile	/^	x86_64-unknown-elf-ld  -z max-page-size=4096 -static -Tsrc\/program_startup_code\/program_link.ld -o objects\/program_0\/executable objects\/program_startup_code\/startup.o objects\/program_0\/main.o$/;"	m
+ax-page-size	Makefile	/^	x86_64-unknown-elf-ld  -z max-page-size=4096 -static -Tsrc\/program_startup_code\/program_link.ld -o objects\/program_1\/executable objects\/program_startup_code\/startup.o objects\/program_1\/main.o$/;"	m
+ax-page-size	Makefile	/^	x86_64-unknown-elf-ld  -z max-page-size=4096 -static -Tsrc\/program_startup_code\/program_link.ld -o objects\/program_2\/executable objects\/program_startup_code\/startup.o objects\/program_2\/main.o$/;"	m
+bss_clear_loop	src/kernel/boot64.s	/^bss_clear_loop:$/;"	l
+cleanup_process	src/kernel/kernel.c	/^cleanup_process(const int process)$/;"	f
+context	src/kernel/kernel.h	/^struct context$/;"	s
+createprocess	src/include/scwrapper.h	/^createprocess(const int executable)$/;"	f
+current_thread	src/kernel/kernel.c	/^current_thread;$/;"	v
+data	Makefile	/^	x86_64-unknown-elf-objcopy  -I binary -O elf64-x86-64 -B i386:x86-64 --set-section-flags .data=alloc,contents,load,readonly,data objects\/program_0\/executable.stripped objects\/program_0\/executable.o$/;"	m
+data	Makefile	/^	x86_64-unknown-elf-objcopy  -I binary -O elf64-x86-64 -B i386:x86-64 --set-section-flags .data=alloc,contents,load,readonly,data objects\/program_1\/executable.stripped objects\/program_1\/executable.o$/;"	m
+data	Makefile	/^	x86_64-unknown-elf-objcopy  -I binary -O elf64-x86-64 -B i386:x86-64 --set-section-flags .data=alloc,contents,load,readonly,data objects\/program_2\/executable.stripped objects\/program_2\/executable.o$/;"	m
+data	Makefile	/^	x86_64-unknown-elf-objcopy -I binary -O elf32-i386 -B i386 --set-section-flags .data=alloc,contents,load,readonly,data objects\/kernel\/kernel64.stripped objects\/kernel\/kernel64.o$/;"	m
+data	src/kernel/kernel.h	/^ }               data;$/;"	m	union:thread	typeref:struct:thread::__anon2
+debugger	src/include/scwrapper.h	/^debugger(void)$/;"	f
+e_ehsize	src/kernel/kernel.h	/^ short         e_ehsize;           \/*!< The size, in bytes, of the header. *\/$/;"	m	struct:Elf64_Ehdr
+e_entry	src/kernel/kernel.h	/^ long          e_entry;            \/*!< Start address of the executable. *\/$/;"	m	struct:Elf64_Ehdr
+e_flags	src/kernel/kernel.h	/^ int           e_flags;            \/*!< Flags that are machine specific.$/;"	m	struct:Elf64_Ehdr
+e_ident	src/kernel/kernel.h	/^ unsigned char e_ident[EI_NIDENT]; \/*!< Array of bytes that shows that this$/;"	m	struct:Elf64_Ehdr
+e_machine	src/kernel/kernel.h	/^ short         e_machine;          \/*!< Identifies the type of machine that$/;"	m	struct:Elf64_Ehdr
+e_phentsize	src/kernel/kernel.h	/^ short         e_phentsize;        \/*!< The size, in bytes, of each entry in$/;"	m	struct:Elf64_Ehdr
+e_phnum	src/kernel/kernel.h	/^ short         e_phnum;            \/*!< The size, in entries, of the program$/;"	m	struct:Elf64_Ehdr
+e_phoff	src/kernel/kernel.h	/^ long          e_phoff;            \/*!< The offset into the image where the$/;"	m	struct:Elf64_Ehdr
+e_shentsize	src/kernel/kernel.h	/^ short         e_shentsize;        \/*!< The size, in bytes, of each entry in$/;"	m	struct:Elf64_Ehdr
+e_shnum	src/kernel/kernel.h	/^ short         e_shnum;            \/*!< The size, in entries, of the section$/;"	m	struct:Elf64_Ehdr
+e_shoff	src/kernel/kernel.h	/^ long          e_shoff;            \/*!< The offset into the image where the$/;"	m	struct:Elf64_Ehdr
+e_shstrndx	src/kernel/kernel.h	/^ short         e_shstrndx;         \/*!< The index, into the section table,$/;"	m	struct:Elf64_Ehdr
+e_type	src/kernel/kernel.h	/^ short         e_type;             \/*!< The type of ELF executable image. *\/$/;"	m	struct:Elf64_Ehdr
+e_version	src/kernel/kernel.h	/^ int           e_version;          \/*!< The version of the ELF specification the$/;"	m	struct:Elf64_Ehdr
+elf_image	src/kernel/kernel.h	/^ const struct Elf64_Ehdr              elf_image; \/*!< The ELF image file header. *\/$/;"	m	struct:executable_image	typeref:struct:executable_image::Elf64_Ehdr
+elf_image	src/kernel/kernel.h	/^ const struct Elf64_Ehdr* elf_image;             \/*!< The start of the ELF$/;"	m	struct:executable	typeref:struct:executable::Elf64_Ehdr
+executable	src/kernel/kernel.h	/^struct executable$/;"	s
+executable_image	src/kernel/kernel.h	/^struct executable_image$/;"	s
+executable_table	src/kernel/kernel.c	/^executable_table[MAX_NUMBER_OF_PROCESSES];$/;"	v	typeref:struct:executable
+executable_table_size	src/kernel/kernel.c	/^executable_table_size;$/;"	v
+first_available_memory_byte	src/kernel/kernel.c	/^unsigned long first_available_memory_byte;$/;"	v
+first_instruction_address	src/kernel/kernel.h	/^ unsigned long first_instruction_address$/;"	m	struct:prepare_process_return_value
+fpu_context	src/kernel/kernel.h	/^ unsigned char fpu_context[512];$/;"	m	struct:context
+gdt_32	src/kernel/boot32.s	/^gdt_32:$/;"	l
+gdt_32_descriptors	src/kernel/boot32.s	/^gdt_32_descriptors:$/;"	l
+halt_the_machine	src/kernel/boot32.s	/^halt_the_machine:$/;"	l
+initialize	src/kernel/kernel.c	/^initialize(void)$/;"	f
+integer_registers	src/kernel/kernel.h	/^ }        integer_registers;$/;"	m	struct:context	typeref:struct:context::__anon1
+kprinthex	src/kernel/kernel.c	/^kprinthex(const register long value)$/;"	f
+kprints	src/kernel/kernel.c	/^kprints(const char* string)$/;"	f
+main	src/program_0/main.c	/^main(int argc, char* argv[])$/;"	f
+main	src/program_1/main.c	/^main(int argc, char* argv[])$/;"	f
+main	src/program_2/main.c	/^main(int argc, char* argv[])$/;"	f
+memory_footprint_size	src/kernel/kernel.h	/^ unsigned long            memory_footprint_size; \/*!< Size in bytes of the$/;"	m	struct:executable
+memory_size	src/kernel/kernel.c	/^unsigned long memory_size;$/;"	v
+multiboot_header	src/kernel/boot32.s	/^multiboot_header:$/;"	l
+name	src/program_startup_code/startup.s	/^name:$/;"	l
+next	src/kernel/kernel.h	/^ const struct executable_image* const next; \/*!< Points to the next$/;"	m	struct:executable_image
+outb	src/kernel/kernel.h	/^outb(const register unsigned short port_number, $/;"	f
+outw	src/kernel/kernel.h	/^outw(const register unsigned short port_number, $/;"	f
+owner	src/kernel/kernel.h	/^  int            owner;         \/*!< The index identifies the process that owns$/;"	m	struct:thread::__anon2
+p_align	src/kernel/kernel.h	/^ long p_align;  \/*!< The alignment the segment should have in memory. This$/;"	m	struct:Elf64_Phdr
+p_filesz	src/kernel/kernel.h	/^ long p_filesz; \/*!< The number of bytes the segment occupies in the$/;"	m	struct:Elf64_Phdr
+p_flags	src/kernel/kernel.h	/^ int  p_flags;  \/*!< The attribute flags of the segment. *\/$/;"	m	struct:Elf64_Phdr
+p_memsz	src/kernel/kernel.h	/^ long p_memsz;  \/*!< The number of bytes the segment occupies in memory. *\/$/;"	m	struct:Elf64_Phdr
+p_offset	src/kernel/kernel.h	/^ long p_offset; \/*!< Offset into the image of the first byte of the$/;"	m	struct:Elf64_Phdr
+p_paddr	src/kernel/kernel.h	/^ long p_paddr;  \/*!< Not used. *\/$/;"	m	struct:Elf64_Phdr
+p_type	src/kernel/kernel.h	/^ int  p_type;   \/*!< Segments can have several types. p_type holds the type. *\/$/;"	m	struct:Elf64_Phdr
+p_vaddr	src/kernel/kernel.h	/^ long p_vaddr;  \/*!< The (virtual) address to which the segment is to be$/;"	m	struct:Elf64_Phdr
+padding	src/kernel/kernel.h	/^ char            padding[1024];$/;"	m	union:thread
+page_table_address	src/kernel/kernel.h	/^ unsigned long page_table_address$/;"	m	struct:prepare_process_return_value
+parent	src/kernel/kernel.h	/^ int             parent;         \/*!< This is an index into process_table. The$/;"	m	struct:process
+pde_base	src/kernel/boot32.s	/^pde_base:$/;"	l
+pdpe_base	src/kernel/boot32.s	/^pdpe_base:$/;"	l
+pml4_base	src/kernel/boot32.s	/^pml4_base:$/;"	l
+prepare_process	src/kernel/kernel.c	/^prepare_process(const struct Elf64_Ehdr* elf_image,$/;"	f
+prepare_process_return_value	src/kernel/kernel.h	/^struct prepare_process_return_value$/;"	s
+printhex	src/include/scwrapper.h	/^printhex(const unsigned long value)$/;"	f
+prints	src/include/scwrapper.h	/^prints(const char* const string)$/;"	f
+process	src/kernel/kernel.h	/^struct process$/;"	s
+process_table	src/kernel/kernel.c	/^process_table[MAX_NUMBER_OF_PROCESSES];$/;"	v	typeref:struct:process
+pte_page_0	src/kernel/boot32.s	/^pte_page_0:$/;"	l
+pte_page_1	src/kernel/boot32.s	/^pte_page_1:$/;"	l
+pte_page_10	src/kernel/boot32.s	/^pte_page_10:$/;"	l
+pte_page_11	src/kernel/boot32.s	/^pte_page_11:$/;"	l
+pte_page_12	src/kernel/boot32.s	/^pte_page_12:$/;"	l
+pte_page_13	src/kernel/boot32.s	/^pte_page_13:$/;"	l
+pte_page_14	src/kernel/boot32.s	/^pte_page_14:$/;"	l
+pte_page_15	src/kernel/boot32.s	/^pte_page_15:$/;"	l
+pte_page_2	src/kernel/boot32.s	/^pte_page_2:$/;"	l
+pte_page_3	src/kernel/boot32.s	/^pte_page_3:$/;"	l
+pte_page_4	src/kernel/boot32.s	/^pte_page_4:$/;"	l
+pte_page_5	src/kernel/boot32.s	/^pte_page_5:$/;"	l
+pte_page_6	src/kernel/boot32.s	/^pte_page_6:$/;"	l
+pte_page_7	src/kernel/boot32.s	/^pte_page_7:$/;"	l
+pte_page_8	src/kernel/boot32.s	/^pte_page_8:$/;"	l
+pte_page_9	src/kernel/boot32.s	/^pte_page_9:$/;"	l
+r10	src/kernel/kernel.h	/^  long    r10;$/;"	m	struct:context::__anon1
+r11	src/kernel/kernel.h	/^  long    r11;$/;"	m	struct:context::__anon1
+r12	src/kernel/kernel.h	/^  long    r12;$/;"	m	struct:context::__anon1
+r13	src/kernel/kernel.h	/^  long    r13;$/;"	m	struct:context::__anon1
+r14	src/kernel/kernel.h	/^  long    r14;$/;"	m	struct:context::__anon1
+r15	src/kernel/kernel.h	/^  long    r15;$/;"	m	struct:context::__anon1
+r8	src/kernel/kernel.h	/^  long    r8;$/;"	m	struct:context::__anon1
+r9	src/kernel/kernel.h	/^  long    r9;$/;"	m	struct:context::__anon1
+rax	src/kernel/kernel.h	/^  long    rax;$/;"	m	struct:context::__anon1
+rbp	src/kernel/kernel.h	/^  long    rbp;$/;"	m	struct:context::__anon1
+rbx	src/kernel/kernel.h	/^  long    rbx;$/;"	m	struct:context::__anon1
+rcx	src/kernel/kernel.h	/^  long    rcx;$/;"	m	struct:context::__anon1
+rdi	src/kernel/kernel.h	/^  long    rdi;$/;"	m	struct:context::__anon1
+rdx	src/kernel/kernel.h	/^  long    rdx;$/;"	m	struct:context::__anon1
+registers	src/kernel/kernel.h	/^  struct context registers;     \/*!< The context of the thread. Note: the$/;"	m	struct:thread::__anon2	typeref:struct:thread::__anon2::context
+return_to_user_mode	src/kernel/enter.s	/^return_to_user_mode:$/;"	l
+rflags	src/kernel/kernel.h	/^  long    rflags;	\/*!< status flags *\/$/;"	m	struct:context::__anon1
+rip	src/kernel/kernel.h	/^  long    rip;		\/*!< instruction pointer *\/$/;"	m	struct:context::__anon1
+rsi	src/kernel/kernel.h	/^  long    rsi;$/;"	m	struct:context::__anon1
+rsp	src/kernel/kernel.h	/^  long    rsp;$/;"	m	struct:context::__anon1
+scratch_space	src/kernel/enter.s	/^scratch_space:$/;"	l
+stack	src/kernel/enter.s	/^stack:$/;"	l
+stack	src/program_startup_code/startup.s	/^stack:$/;"	l
+stack_32bit	src/kernel/boot32.s	/^stack_32bit:$/;"	l
+start_of_64bit_code	src/kernel/relocate.s	/^start_of_64bit_code:$/;"	l
+syscall_dummy_target	src/kernel/enter.s	/^syscall_dummy_target:$/;"	l
+syscall_target	src/kernel/enter.s	/^syscall_target:$/;"	l
+system_call_handler	src/kernel/kernel.c	/^system_call_handler(void)$/;"	f
+system_call_implementation	src/kernel/syscall.c	/^system_call_implementation(void)$/;"	f
+terminate	src/include/scwrapper.h	/^terminate(void)$/;"	f
+thread	src/kernel/kernel.h	/^union thread$/;"	u
+thread_table	src/kernel/kernel.c	/^thread_table[MAX_NUMBER_OF_THREADS];$/;"	v	typeref:union:thread
+threads	src/kernel/kernel.h	/^ int             threads;        \/*!< The number of threads running in this$/;"	m	struct:process
+version	src/include/scwrapper.h	/^version(void)$/;"	f
